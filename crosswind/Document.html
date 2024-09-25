@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document page</title>
+</head>
+<body>
+
+
+    <nav class="bg-black border-gray-200  w-[100%]   ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="/Dashborad.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="/assets/logoImg.png" class="h-14 " alt=" Logo" />
+             
+          </a>
+         
+         <button class="text-white lg:block  md:hidden hidden   bg-[#C10207] px-6 py-2 rounded-[50px]" ><a href="/Index.html"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a></button>
+         <button class="text-white hover:text-white bg-[#C10207] p-2 rounded-lg  lg:hidden md:block  " id="open-sidebar">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+        
+        
+        </div>
+        
+      </nav>
+      <!-- ============ sidebar  =============-->
+       
+
+
+<div class=" mx-auto  flex">
+
+	<aside id="sidebar" class=" lg:relative lg:left-[223px]    absolute bg-gray-800 text-white w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300" aria-label="Sidebar">
+		<div class=" lg:h-[186vh] h-[250vh] py-20 sm:h-[180vh]   bg-[#E2E2E2] dark:bg-gray-800">
+			<ul class="space-y-7">
+				<li>
+					<a href="/Dashborad.html"
+						class="flex items-center p-2 w-[200px]    font-normal text-gray-900 rounded-[0px_50px_50px_0px]  hover:text-white hover:bg-[#C10207] ">
+					
+						<span class=" font-medium"><i class="fa fa-home text-2xl" ></i> Dashboard</span>
+					</a>
+				</li>
+				<li>
+					<button type="button" class="flex items-center p-2 w-[200px]    font-normal text-gray-900 rounded-[0px_50px_50px_0px]  hover:text-white hover:bg-[#C10207]"  data-collapse-toggle="dropdown-example">
+               
+                  <span class=" font-medium"><i class="fa fa-users text-2xl " ></i>  Users</span>
+                
+            </button>
+					<ul id="dropdown-example" class="hidden py-2 space-y-2 bg-[#C10207] w-[200px] rounded-[0px_12px_12px_0px] ">
+						<li>
+							<a href="/Patients.html"
+								class="flex items-center p-2    font-medium text-gray-900 hover:text-white hover:bg-[#C10207]  pl-10"> Patients</a>
+						</li>
+						<li>
+							<a href="/Doctors.html"
+                            class="flex items-center p-2 w-[200px]    font-medium text-gray-900 rounded-[0px_50px_50px_0px]  hover:text-white hover:bg-[#C10207] pl-10">Doctors</a>
+						</li>
+						
+					</ul>
+				</li>
+                <li>
+					<a href="History.html"
+						class="flex items-center p-2 w-[200px]    font-normal text-gray-900 rounded-[0px_50px_50px_0px]  hover:text-white hover:bg-[#C10207] ">
+					
+						<span class=" font-medium"><i class="fa fa-history text-2xl " ></i> Order History</span>
+					</a>
+				</li>
+
+
+                <li>
+					<a href="Active.html"
+						class="flex items-center p-2 w-[200px]    font-normal text-gray-900 rounded-[0px_50px_50px_0px]  hover:text-white hover:bg-[#C10207] ">
+					
+						<span class=" font-medium"><i class="fa fa-user-md text-2xl" ></i> Active Doctors</span>
+					</a>
+				</li>
+
+                <li>
+					<a href="/Emergency.html"
+						class="flex items-center p-2 w-[200px]    font-normal text-gray-900 rounded-[0px_50px_50px_0px]  hover:text-white hover:bg-[#C10207] ">
+					
+						<span class=" font-medium"><i class="fa fa-lightbulb-o text-2xl" ></i> Emergency</span>
+					</a>
+				</li>
+				
+		
+		
+			</ul>
+		</div>
+	</aside>
+<!-- main section  -->
+<div>
+    
+    <h1 class="text-3xl font-bold p-4 ">Documents</h1>
+    <div class=" flex flex-wrap gap-[60px] p-5">
+        <div class="pl-10">
+            <h2 class="font-medium text-2xl pb-2">ID card</h2>
+            <img class="md:w-[300px] lg:w-[350px]   " src="/assets/frontside.png"/>
+        </div>
+        <div class="">
+            <h2 class="font-medium text-2xl pb-2">Collegiate Card</h2>
+            <img class="lg:w-[350px] md:w-[300px] " src="/assets/backside.png"/>
+        </div>
+    </div>
+<div class="pl-12">
+    <h3 class="lg:text-2xl font-bold m-4">Medical Title</h3>
+    <img class="lg:w-[780px] lg:h-[300px] sm:w-[480px]  md:w-[500px] md:h-[200px]" src="/assets/medical.png"/>
+    
+</div>
+<h4 class="text-2xl font-medium pt-5 pl-12">Accreditation</h4>
+<div class="pl-10 pt-2 flex gap-7 flex-wrap">
+<img class="w-[250px] "   src="/assets/certicate1.png"/>
+<img class="w-[250px] "   src="/assets/certifite2.png"/>
+<img class="w-[250px] "   src="/assets/certifite3.png"/>
+</div>
+    
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+       
+<!-- javascript -->
+
+<script>
+    const sidebar = document.getElementById('sidebar');
+const openSidebarButton = document.getElementById('open-sidebar');
+
+openSidebarButton.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sidebar.classList.toggle('-translate-x-full');
+});
+
+// Close the sidebar when clicking outside of it
+document.addEventListener('click', (e) => {
+    if (!sidebar.contains(e.target) && !openSidebarButton.contains(e.target)) {
+        sidebar.classList.add('-translate-x-full');
+    }
+});
+</script>
+
+<script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+</body>
+</html>
